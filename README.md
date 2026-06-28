@@ -10,14 +10,13 @@ The current browser prototype is featured on the home page:
 https://humble-marvel-dx2j.here.now/
 ```
 
-## Before Publishing
+## Support Contact
 
-Replace `REPLACE_WITH_SUPPORT_EMAIL_BEFORE_PUBLISHING` in:
+Public support email:
 
-- `support/index.html`
-- `privacy/index.html`
-
-Use a real public support email, because App Store Connect needs a support page with working contact information.
+```text
+bloodstreamdefendersupport@gmail.com
+```
 
 ## Local Preview
 
@@ -41,7 +40,7 @@ Recommended repo name:
 bloodstream-defender-site
 ```
 
-After the email placeholder is replaced:
+Initial publishing flow:
 
 ```sh
 git init
