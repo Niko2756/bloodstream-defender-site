@@ -2,6 +2,14 @@
 
 Static GitHub Pages starter site for Bloodstream Defender.
 
+## Prototype Demo
+
+The current browser prototype is featured on the home page:
+
+```text
+https://humble-marvel-dx2j.here.now/
+```
+
 ## Before Publishing
 
 Replace `REPLACE_WITH_SUPPORT_EMAIL_BEFORE_PUBLISHING` in:
