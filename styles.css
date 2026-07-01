@@ -78,6 +78,76 @@ img {
   max-width: 100%;
 }
 
+.media-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: inherit;
+  color: var(--cyan);
+  text-decoration: none;
+  outline-offset: 5px;
+}
+
+.media-link img {
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.media-link::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background:
+    linear-gradient(135deg, rgba(81, 242, 255, 0.18), transparent 48%),
+    radial-gradient(circle at 85% 18%, rgba(255, 213, 111, 0.18), transparent 8rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.media-link::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  content: "";
+  border: 1px solid rgba(81, 242, 255, 0.72);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 12px 12px, transparent 0 6px, currentColor 6px 8px, transparent 8px),
+    linear-gradient(45deg, transparent 0 57%, currentColor 57% 64%, transparent 64%),
+    rgba(6, 0, 6, 0.72);
+  box-shadow: 0 0 18px rgba(81, 242, 255, 0.28);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.media-link:hover img,
+.media-link:focus-visible img {
+  filter: saturate(1.08) brightness(1.05);
+  transform: scale(1.025);
+}
+
+.media-link:hover::before,
+.media-link:hover::after,
+.media-link:focus-visible::before,
+.media-link:focus-visible::after {
+  opacity: 1;
+  transform: none;
+}
+
+.media-link:focus-visible {
+  outline: 2px solid var(--cyan);
+}
+
 .sr-only {
   position: absolute !important;
   width: 1px !important;
@@ -296,6 +366,7 @@ img {
   content: "";
   border-radius: 999px;
   background: #050004;
+  pointer-events: none;
   transform: translateY(-50%);
 }
 
@@ -304,6 +375,10 @@ img {
   z-index: 1;
   display: block;
   width: 100%;
+  border-radius: 24px;
+}
+
+.phone-frame .media-link {
   border-radius: 24px;
 }
 
@@ -327,6 +402,10 @@ img {
   display: block;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 14px;
+}
+
+.prototype-band .media-link {
   border-radius: 14px;
 }
 
@@ -389,6 +468,10 @@ img {
   border-radius: 16px;
 }
 
+.loop-art .media-link {
+  border-radius: 16px;
+}
+
 .feature h3,
 .asset-strip figcaption,
 .shot figcaption {
@@ -437,6 +520,10 @@ img {
 
 .shot--ipad img {
   aspect-ratio: 4 / 3;
+}
+
+.shot .media-link {
+  border-radius: 15px;
 }
 
 .shot figcaption {
@@ -663,6 +750,10 @@ img {
 
 .asset-strip figure:first-child img {
   aspect-ratio: 1;
+}
+
+.asset-strip .media-link {
+  border-radius: 10px;
 }
 
 .asset-strip figcaption {
