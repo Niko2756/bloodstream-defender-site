@@ -3,9 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bloodstream Defender is a fast arcade survival game for iPhone and iPad. Dodge pathogens, fire antibodies, unlock immune upgrades, and survive boss virus attacks.">
+    <meta name="description" content="Bloodstream Defender is a quick-run immune-defense arcade game for iPhone and iPad. Dodge pathogens, fire antibodies, unlock immune upgrades, and fight boss viruses with no tracking or in-app purchases.">
+    <meta property="og:title" content="Bloodstream Defender">
+    <meta property="og:description" content="A quick-run immune-defense arcade game for iPhone and iPad. Play the browser prototype now.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://niko2756.github.io/bloodstream-defender-site/">
+    <meta property="og:image" content="https://niko2756.github.io/bloodstream-defender-site/assets/iphone-gameplay.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bloodstream Defender">
+    <meta name="twitter:description" content="Defend the bloodstream in a quick-run immune-defense arcade game for iPhone and iPad.">
+    <meta name="theme-color" content="#160208">
     <title>Bloodstream Defender</title>
     <link rel="icon" href="assets/app-icon.png?v=20260701">
+    <link rel="apple-touch-icon" href="assets/app-icon.png?v=20260701">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -16,6 +26,7 @@
       </a>
       <nav class="nav" aria-label="Main navigation">
         <a href="https://humble-marvel-dx2j.here.now/" target="_blank" rel="noopener">Play Prototype</a>
+        <a href="#loop">Game Loop</a>
         <a href="#screenshots">Screenshots</a>
         <a href="support/">Support</a>
         <a href="privacy/">Privacy</a>
@@ -24,80 +35,199 @@
 
     <main>
       <section class="site-shell hero">
-        <div>
-          <h1>Defend the bloodstream.</h1>
+        <div class="hero-copy">
+          <h1>Bloodstream Defender</h1>
+          <p class="hero-line">Defend the bloodstream.</p>
           <p>
-            Dodge pathogens, fire antibodies, choose immune upgrades, and survive arcade boss fights inside a vivid living bloodstream.
+            Dodge pathogens, fire antibodies, choose immune upgrades, and survive boss virus attacks inside a vivid living bloodstream.
           </p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="https://humble-marvel-dx2j.here.now/" target="_blank" rel="noopener">Play Prototype</a>
-            <a class="button" href="support/">Get Support</a>
+            <a class="button primary" href="https://humble-marvel-dx2j.here.now/" target="_blank" rel="noopener">
+              <span class="button-icon" aria-hidden="true"></span>
+              Play Prototype
+            </a>
+            <a class="button" href="#screenshots">View Screenshots</a>
           </div>
-          <div class="status-line" aria-label="Release status">
-            <span>Browser prototype playable now</span>
-            <span>Coming soon on the App Store</span>
-            <span>iPhone and iPad</span>
-          </div>
+          <dl class="hero-facts" aria-label="Release status">
+            <div>
+              <dt>Playable now</dt>
+              <dd>Browser prototype</dd>
+            </div>
+            <div>
+              <dt>Coming soon</dt>
+              <dd>iPhone and iPad</dd>
+            </div>
+            <div>
+              <dt>Mobile-first</dt>
+              <dd>Touch and tilt</dd>
+            </div>
+          </dl>
         </div>
-        <div class="hero-card" aria-label="Bloodstream Defender title screenshot">
-          <img src="assets/iphone-title.png" alt="Bloodstream Defender title screen">
+        <div class="hero-media" aria-label="Bloodstream Defender gameplay screenshot">
+          <div class="phone-frame">
+            <img src="assets/iphone-gameplay.png" alt="Bloodstream Defender gameplay with a white blood cell firing antibodies at pathogens">
+          </div>
         </div>
       </section>
 
-      <section class="site-shell demo-callout" aria-labelledby="prototypeTitle">
+      <section class="site-shell prototype-band" aria-labelledby="prototypeTitle">
+        <img src="assets/iphone-title.png" alt="Bloodstream Defender title screen">
         <div>
-          <span class="eyebrow">Playable prototype</span>
-          <h2 id="prototypeTitle">Try the browser version now.</h2>
+          <h2 id="prototypeTitle">Try the browser prototype now.</h2>
           <p>
-            Test the original web prototype while the native iPhone and iPad version gets ready for release.
+            Jump into the original web prototype and feel the core arcade loop while the polished native iPhone and iPad version gets ready for release.
           </p>
+          <a class="button primary" href="https://humble-marvel-dx2j.here.now/" target="_blank" rel="noopener">Open Prototype</a>
         </div>
-        <a class="button primary" href="https://humble-marvel-dx2j.here.now/" target="_blank" rel="noopener">Open Demo</a>
       </section>
 
-      <section id="screenshots" class="site-shell section">
-        <h2>Fast immune-defense arcade action.</h2>
-        <p class="section-lead">
-          Bloodstream Defender is built for quick runs: move, shoot, dodge, adapt, and push deeper into tougher pathogen waves and boss encounters.
-        </p>
-        <div class="shot-grid">
+      <section id="loop" class="site-shell section loop-section">
+        <h2 class="sr-only">The immune-defense loop.</h2>
+        <figure class="loop-art">
+          <img src="assets/immune-defense-loop-kids.png" alt="The immune-defense loop: survive, upgrade, blast, and face the boss.">
+          <figcaption class="sr-only">Survive waves, choose upgrades, blast pathogens, and face boss viruses.</figcaption>
+        </figure>
+        <p class="sr-only">Gameplay loop: survive waves, choose upgrades, get stronger, and defeat boss viruses.</p>
+      </section>
+
+      <section id="screenshots" class="site-shell section screenshots-section">
+        <div class="section-heading">
+          <h2>In-game screenshots.</h2>
+          <p>See the action on iPhone and iPad, from first run to boss encounter.</p>
+        </div>
+        <div class="shot-rail" aria-label="Bloodstream Defender screenshots">
+          <figure class="shot">
+            <img src="assets/iphone-title.png" alt="Bloodstream Defender iPhone title screen">
+            <figcaption>Title screen</figcaption>
+          </figure>
           <figure class="shot">
             <img src="assets/iphone-how-to.png" alt="How to play screen showing move, shoot, dodge, and survive instructions">
-            <figcaption>Simple controls for new defenders.</figcaption>
+            <figcaption>Learn fast</figcaption>
           </figure>
           <figure class="shot">
             <img src="assets/iphone-gameplay.png" alt="Gameplay screen with white blood cell, pathogens, and antibody projectiles">
-            <figcaption>Dodge pathogens and keep firing.</figcaption>
+            <figcaption>Arcade action</figcaption>
           </figure>
           <figure class="shot">
             <img src="assets/iphone-boss.png" alt="Boss encounter gameplay screenshot">
-            <figcaption>Face boss viruses with unique attacks.</figcaption>
+            <figcaption>Boss fights</figcaption>
+          </figure>
+          <figure class="shot shot--ipad">
+            <img src="assets/ipad-title.png" alt="Bloodstream Defender iPad title screen">
+            <figcaption>iPad support</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="site-shell section">
-        <div class="info-grid">
-          <article class="panel">
-            <h3>Play Your Way</h3>
-            <p>Use touch controls or tilt movement, with haptics and audio feedback tuned for quick mobile sessions.</p>
-          </article>
-          <article class="panel">
-            <h3>Adapt Each Run</h3>
-            <p>Unlock immune-inspired upgrades for antibody fire, movement, and emergency pulse defense.</p>
-          </article>
-          <article class="panel">
-            <h3>Game Center</h3>
-            <p>Compete through leaderboards and challenges when signed in to Apple Game Center.</p>
-          </article>
+      <section class="site-shell section mobile-section" aria-labelledby="mobileTitle">
+        <div class="mobile-copy">
+          <h2 id="mobileTitle">Built for quick mobile sessions.</h2>
+          <p>
+            Bloodstream Defender is tuned for fast arcade runs: short enough to replay, intense enough to keep pushing, and readable on touch screens.
+          </p>
+        </div>
+        <div class="mobile-layout">
+          <div class="feature-list">
+            <article class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <img src="assets/feature-icon-play.png" alt="" width="104" height="104" loading="lazy">
+              </span>
+              <div class="feature-copy">
+                <h3>Play your way</h3>
+                <p>Use touch controls or tilt movement, with haptics and audio feedback for mobile play.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <img src="assets/feature-icon-adapt.png" alt="" width="104" height="104" loading="lazy">
+              </span>
+              <div class="feature-copy">
+                <h3>Adapt each run</h3>
+                <p>Unlock immune-inspired upgrades for antibody fire, movement, and complement pulse defense.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <img src="assets/feature-icon-gamecenter.png" alt="" width="104" height="104" loading="lazy">
+              </span>
+              <div class="feature-copy">
+                <h3>Game Center</h3>
+                <p>Compete through leaderboards and challenges when signed in to Apple Game Center.</p>
+              </div>
+            </article>
+          </div>
+          <aside class="qr-panel" aria-labelledby="qrTitle">
+            <div>
+              <h3 id="qrTitle">Get it on your phone.</h3>
+              <p>After launch, scan the QR code to open the app page on your iPhone or iPad.</p>
+            </div>
+            <div class="qr-placeholder" aria-label="QR code placeholder">
+              <span>QR code</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="site-shell trust-strip" aria-label="App trust and ownership details">
+        <div>
+          <strong>No tracking</strong>
+          <span>No third-party analytics or ad tracking.</span>
+        </div>
+        <div>
+          <strong>Offline play</strong>
+          <span>The native app plays offline after download.</span>
+        </div>
+        <div>
+          <strong>No in-app purchases</strong>
+          <span>Buy once. The game is yours.</span>
+        </div>
+        <div>
+          <strong>Updates included</strong>
+          <span>Future updates come with the app.</span>
+        </div>
+      </section>
+
+      <section class="site-shell section press-section">
+        <div class="press-copy">
+          <h2>Press and sharing kit.</h2>
+          <p>
+            Bloodstream Defender is a quick-run immune-defense arcade game for iPhone and iPad where players dodge pathogens, fire antibodies, collect upgrades, and survive boss virus attacks.
+          </p>
+        </div>
+        <div class="asset-strip" aria-label="Available marketing assets">
+          <figure>
+            <img src="assets/app-icon.png?v=20260701" alt="Bloodstream Defender app icon">
+            <figcaption>App icon</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/iphone-title.png" alt="Bloodstream Defender title screenshot">
+            <figcaption>iPhone title</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/iphone-gameplay.png" alt="Bloodstream Defender gameplay screenshot">
+            <figcaption>Gameplay</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/iphone-boss.png" alt="Bloodstream Defender boss fight screenshot">
+            <figcaption>Boss fight</figcaption>
+          </figure>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="site-shell">
+        <a class="brand brand--footer" href="./" aria-label="Bloodstream Defender home">
+          <img src="assets/app-icon.png?v=20260701" alt="">
+          <span>Bloodstream Defender</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="https://humble-marvel-dx2j.here.now/" target="_blank" rel="noopener">Play Prototype</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="support/">Support</a>
+          <a href="privacy/">Privacy Policy</a>
+        </nav>
         <span>Copyright 2026 Niko Lim. All rights reserved.</span>
-        <span><a href="support/">Support</a> · <a href="privacy/">Privacy Policy</a></span>
       </div>
     </footer>
   </body>
